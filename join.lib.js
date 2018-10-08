@@ -25,7 +25,6 @@ var JoinForm = function () {
     this.fields["postal"].message = "6 numbers or letters";
     this.fields["zip"].message = "Use 5 or 9 digit ZIP code.";
     this.fields["tele"].message = "Use 999-999-9999 format.";
-    
 
     // Field error messages
     this.fields["username"].required = "Username is required.";
