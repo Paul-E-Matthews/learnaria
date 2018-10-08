@@ -56,12 +56,15 @@ JoinForm.prototype.matches = function (text1, text2) {
 JoinForm.prototype.isUsername = function(text){
         return /^[a-zA-Z0-9]{4}[a-zA-Z]*?$/.test(text);
 }
+
 JoinForm.prototype.isPassword = function (text) {
     return /^(?=.*[a-zA-Z])(?=.*[0-9])/.test(text);
 }
+
 JoinForm.prototype.isName = function(text){
         return /^[a-zA-Z]*$/.test(text);
 }
+
 JoinForm.prototype.isEmail = function (text) {
     if (text.length == 0) return false;
     var parts = text.split("@");
@@ -211,6 +214,7 @@ JoinForm.prototype.resetErrors = function () {
             ( message ) ? message : "";
     }
 }
+
 // Set default messages
 JoinForm.prototype.setMessages = function () {
     var message;
@@ -223,6 +227,7 @@ JoinForm.prototype.setMessages = function () {
         $s(fieldName + "_error").firstChild.nodeValue = message;
     }
 }
+
 JoinForm.prototype.clearError = function ( fieldName ) {
     if(fieldName){
     $s(fieldName + "_error").className = "";

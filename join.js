@@ -2,7 +2,7 @@ var joinForm;
 var joinClick = function () {
     $s("join").blur();
     if ( joinForm.validateForm() ) {
-        //Disable popup alert for ChromeVox testing
+        // Disable popup alert for ChromeVox testing
         //alert("Please correct the errors on the page.");
     } else {
         document.location.href = '#top';
