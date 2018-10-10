@@ -32,10 +32,10 @@
 		$elem = this.element
 			.attr({
 				"id": id,
-			"tabindex": 0,
-			"role": "button",
-			"aria-label": plugin.options.label,
-			"aria-pressed": false
+				"tabindex": "0",
+				"role": "button",
+				"aria-label": plugin.options.label,
+				"aria-pressed": false
 			});
 		
 		plugin.options.onToggle = plugin.options.onToggle.bind(plugin);
